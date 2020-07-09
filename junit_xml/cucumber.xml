@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="39.16192">
+<testcase classname="search product sporting" name="Search product online by pressing enter" time="23.073517">
+<system-out><![CDATA[Given i am on the store home page...........................................passed
+When enter the requested product "shoes"....................................passed
+Then press enter............................................................passed
+And select the brand "PUMA".................................................passed
+And select the size "10"....................................................passed
+Then i see the list of the requested product................................passed
+Then i close browser........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search product sporting" name="Search product online by pressing button" time="16.088403">
+<system-out><![CDATA[Given i am on the store home page...........................................passed
+When enter the requested product "shoes"....................................passed
+Then click the button search................................................passed
+And select the brand "ASICS"................................................passed
+And select the size "9".....................................................passed
+Then i see the list of the requested product................................passed
+Then i close browser........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
