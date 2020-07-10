@@ -1,9 +1,16 @@
-node{
-  stage('SCM Checkout'){
-    git 'https://github.com/juliusriestra/cucumber-junit-data1'
+pipeline {
+  agent any 
+  stages{
+    stage("Build") {
+      steps {
+        sh "mvn -version"
+        sh "mvn clean install"
+      }
+    }
   }
-  stage('Compile-Package'){
-    def mvnHome = tool name: 'JENKINS_MAVEN', type: 'maven'
-    sh "${mvnHome}/bin/mvn package"
+  post {
+    always {
+      cleanWs()
+    }
   }
 }
